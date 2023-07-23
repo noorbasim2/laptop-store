@@ -27,7 +27,7 @@ TextField TextFieldMethod({Color? prefixIconColor, String? hintText}) {
         suffixIcon: const Icon(Icons.menu_open_sharp),
         suffixIconColor: const Color(0xffE42F45),
         hintText: hintText,
-        hintStyle:   TextStyle(fontSize: 17.sp,color: Color(0xFF757575)),
+        hintStyle:   TextStyle(fontSize: 17.sp,color: const Color(0xFF757575)),
         fillColor: Colors.white,
         filled: true,
       ),

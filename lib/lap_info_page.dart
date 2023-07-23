@@ -7,7 +7,7 @@ class LapInfoPage extends StatelessWidget {
   LapInfoPage({super.key, required this.imgName});
   final String imgName;
 
-  List Details = [
+  List details = [
     "World-leading 16” 3.2K 120 Hz OLED touchscreen",
     "13th Gen​ Intel® Core™ ​ i9-13980HX",
     "NVIDIA RTX™ 3000 Ada Laptop GPU",
@@ -59,7 +59,7 @@ class LapInfoPage extends StatelessWidget {
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.favorite_border),
+                                icon: const Icon(Icons.favorite_border),
                               ),
                             ],
                           ),
@@ -76,7 +76,7 @@ class LapInfoPage extends StatelessWidget {
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.star,
                                   color: Colors.amber,
                                 ),
@@ -96,9 +96,9 @@ class LapInfoPage extends StatelessWidget {
                           children: [
                             ListView.builder(
                               shrinkWrap: true,
-                              itemCount: Details.length,
+                              itemCount: details.length,
                               itemBuilder: (BuildContext context, int i) {
-                                return Text("● ${Details[i]}",
+                                return Text("● ${details[i]}",
                                     style:
                                         Theme.of(context).textTheme.bodyMedium);
                               },
@@ -126,9 +126,9 @@ class LapInfoPage extends StatelessWidget {
                         onPressed: () {},
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15)),
+                        color: const Color(0xffE42F45),
                         child: const Text("Buy Now",
                             style: TextStyle(color: Colors.white)),
-                        color: const Color(0xffE42F45),
                       ),
                     ),
                   ],

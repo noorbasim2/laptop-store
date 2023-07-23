@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    pageController = new PageController();
+    pageController = PageController();
     super.initState();
   }
 
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                 Text("Discover", style: Theme.of(context).textTheme.bodyLarge),
                 const SizedBox(height: 10),
                 TextFieldMethod(
-                    prefixIconColor: Color(0xff757575), hintText: "Search"),
+                    prefixIconColor: const Color(0xff757575), hintText: "Search"),
                 const SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

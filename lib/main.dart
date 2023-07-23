@@ -9,11 +9,11 @@ import 'main_page.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
-  runApp(MyApp(isDark: false));
+  runApp(const MyApp(isDark: false));
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key, required this.isDark});
+  const MyApp({super.key, required this.isDark});
   final bool isDark;
 
   @override
@@ -92,6 +92,10 @@ class MyApp extends StatelessWidget {
                       color: Colors.white,
                       fontSize: 20.sp,
                       fontWeight: FontWeight.bold,
+                    ),
+                    titleMedium: TextStyle(
+                      color: const Color(0xffDFDFDF),
+                      fontSize: 15.sp,
                     ),
                     titleSmall: TextStyle(
                       color: const Color(0xffE42F45),

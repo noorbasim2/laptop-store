@@ -28,14 +28,14 @@ class GridTileWidget extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Text("$textOne",
+                    Text(textOne,
                         style: Theme.of(context).textTheme.titleLarge),
-                    Text("$textTwo",
+                    Text(textTwo,
                         style: Theme.of(context).textTheme.titleMedium),
                   ],
                 ),
                 MaterialButton(
-                  color: Color(0xffE42F45),
+                  color: const Color(0xffE42F45),
                   textColor: Colors.white,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
